@@ -157,3 +157,10 @@ Migrating to CreateStudents (1)
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
   [1m[35mSQL (0.3ms)[0m  INSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["first_name", "Morty"], ["last_name", "Smith"], ["created_at", "2019-01-18 20:55:21.137102"], ["updated_at", "2019-01-18 20:55:21.137102"]]
   [1m[36m (11.5ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/students" for 190.102.85.251 at 2019-01-18 21:19:35 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (10.4ms)
